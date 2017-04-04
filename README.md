@@ -12,8 +12,8 @@ Failer - Handle Failures like a Pro
     sub do-stuff { fail "meow" }
 
     sub meows {
-        $*CWD = no-fail do-stuff;  # leaves $*CWD untouched; returns unhandled Failure
-        my $foo = do-stuff ∨-fail; # returns unhandled Failure
+        $*CWD = no-fail do-stuff;  # leaves $*CWD untouched; returns unhandled Failure from meows
+        my $foo = do-stuff ∨-fail; # returns unhandled Failure from meows
 
         my $f = Failure.new;
         say so-fail $f; # like regular `so`, but leaves Failure unhandled
