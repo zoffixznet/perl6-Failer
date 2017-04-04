@@ -55,7 +55,7 @@ Functionally, it's equivalent to writing:
 ## `postfix:<∨-fail>`
 
 ```perl6
-    my $foo = do-stuff() ∨-fail;
+    my $foo = do-stuff ∨-fail;
 ```
 
 A postfix operator with the same precedence as
