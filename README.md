@@ -24,9 +24,9 @@ Failer - Handle Failures like a Pro
 # DESCRIPTION
 
 [`Failure`s](http://docs.perl6.org/type/Failure) are awesome! But,
-non-invasively checking for `Failure`s isn't always. Other than using a
-smartmatch, any calls to `.Bool` or `.defined`
-on a `Failure` will disarm it, so once you detect that what you have infact is a
+non-invasively checking for `Failure`s isn't always. Any calls to `.Bool` or
+`.defined` on a `Failure` will disarm it, so other than using a
+smartmatch, once you detect that what you have in fact is a
 `Failure`, you have to re-arm it again to maintain its explositivity.
 Here's where this module saves the day!
 
