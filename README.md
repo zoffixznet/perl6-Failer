@@ -52,8 +52,6 @@ Functionally, it's equivalent to writing:
     }
 ```
 
-if foo ∨-bar
-
 ## `postfix:<∨-fail>`
 
 ```perl6
