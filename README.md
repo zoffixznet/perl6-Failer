@@ -64,7 +64,7 @@ routine**. Does nothing otherwise. Returns `Nil`.
 Functionally, it's equivalent to writing:
 
 ```perl6
-    my $foo = do-stuff orelse do { .handled = 0; .return }
+    my $foo = do-stuff orelse do { when Failure { .handled = 0; .return } }
 ```
 
 **NOTE:** the `∨` in `∨-fail` is `U+2228 LOGICAL OR [Sm] (∨)`, not a regular
