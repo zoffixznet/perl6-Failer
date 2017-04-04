@@ -17,7 +17,7 @@ Failer - Handle Failures like a Pro
 
         my $f = Failure.new;
         say so-fail $f; # like regular `so`, but leaves Failure unhandled
-        say defined-fail $f; # like regular `defined`, but leaves Failure unhandled
+        say de-fail $f; # like regular `defined`, but leaves Failure unhandled
     }
 ```
 
@@ -30,8 +30,8 @@ smartmatch, once you detect that what you have in fact is a
 `Failure`, you have to re-arm it again to maintain its explositivity.
 Here's where this module saves the day!
 
-All available goodies are named in `XX-fail` format: `no-fail`, and `so-fail`.
-The exception is `∨-fail`, because rules need exceptions.
+All available goodies are named in `XX-fail` format: `no-fail`, `so-fail`,
+and `de-fail`. The exception is `∨-fail`, because rules need exceptions.
 
 # EXPORTED ROUTINES AND OPERATORS
 
