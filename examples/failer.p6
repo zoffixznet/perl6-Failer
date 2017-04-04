@@ -1,3 +1,4 @@
+use lib <lib>;
 use Failer;
 
 sub do-stuff { fail "meow" }
@@ -8,7 +9,7 @@ sub meows {
 
     my $f = Failure.new;
     say so-fail $f; # like regular `so`, but leaves Failure unhandled
-    say defined-fail $f; # like regular `defined`, but leaves Failure unhandled
+    say de-fail $f; # like regular `defined`, but leaves Failure unhandled
 }
 
 say meows.handled
